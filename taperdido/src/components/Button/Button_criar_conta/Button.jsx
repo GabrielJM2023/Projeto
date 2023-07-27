@@ -3,7 +3,7 @@ import React from "react";
 function Button() {
   return (
     <button>
-      <span>Texto do botão</span>
+      <span>Crie sua conta</span>
     </button>
   );
 }
