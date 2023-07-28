@@ -1,3 +1,11 @@
 .main {
-  background-color: #7BD159;
+   background-color: #7BD159;
+   display: grid;
+   place-items: center;
+}
+
+.div {
+   background-color: #edffe6;
+   display: grid;
+   place-items: center;
 }
