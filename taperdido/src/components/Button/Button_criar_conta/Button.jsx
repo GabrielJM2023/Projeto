@@ -1,11 +1,11 @@
 import React from "react";
 
-function Button() {
-  return (
-    <button>
-      <span>Texto do botão</span>
-    </button>
-  );
+function Button({ onClick }) {
+   return (
+      <button onClick={onClick}>
+         <span>Crie sua conta</span>
+      </button>
+   );
 }
 
 export default Button
