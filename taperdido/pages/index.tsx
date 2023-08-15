@@ -1,7 +1,5 @@
-import styles from '../styles/Home.module.css'
 import React from 'react'
 import Button from '../src/components/Button/Button_criar_conta'
-import Input from '../src/components/Input'
 
 class App extends React.Component {
    onClickButton = () => {
@@ -9,7 +7,9 @@ class App extends React.Component {
    }
    render() {
       return (
-         <Button onClick={this.onClickButton} />
+         <>
+            <Button onClick={this.onClickButton} />
+         </>
       )
    }
 }
