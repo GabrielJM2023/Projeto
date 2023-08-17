@@ -1,17 +1,16 @@
 import React from 'react'
 import Button from '../src/components/Button/Button_criar_conta'
 
-class App extends React.Component {
-   onClickButton = () => {
-      alert('Clicando no botão')
+function App() {
+   const onClickButton = () => {
+      console.log('Clicar no botão')
    }
-   render() {
-      return (
-         <>
-            <Button onClick={this.onClickButton} />
-         </>
-      )
-   }
+
+   return (
+      <div id='teste'>
+         <Button onClick={onClickButton}></Button>
+      </div>
+   )
 }
 
 export default App

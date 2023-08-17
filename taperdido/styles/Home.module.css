@@ -1,5 +1,5 @@
-.main {
-   background-color: #7BD159;
+.teste {
+   background-color: red;
    display: grid;
    place-items: center;
 }
@@ -7,5 +7,4 @@
 .div {
    background-color: #edffe6;
    display: grid;
-   place-items: center;
 }
