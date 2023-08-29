@@ -19,10 +19,8 @@ a {
 }
 
 .Header {
-   overflow: hidden;
    justify-content: center;
    display: flex;
-   align-items: center;
    background-color: rebeccapurple;
 }
 
@@ -31,4 +29,6 @@ a {
    height: 500px;
    align-items: center;
    background-color: red;
+   padding: 40px;
+   margin-top: 200px;
 }

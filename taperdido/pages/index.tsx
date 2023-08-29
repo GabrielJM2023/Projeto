@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from '../src/components/Header'
+import Tela_Login from './home/App'
 
 function App() {
    return (
-      <div className='Login'>
-         <Header></Header>
-      </div>
+      <>
+         <div>
+            <Tela_Login></Tela_Login>
+         </div>
+      </>
    )
 }
 
