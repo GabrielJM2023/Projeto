@@ -1,12 +1,8 @@
 html,
 body {
-   padding: 0;
-   margin: 0;
    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
    background-color: #7BD159;
-   display: grid;
-   place-items: center;
 }
 
 a {
@@ -18,17 +14,42 @@ a {
    box-sizing: border-box;
 }
 
-.Header {
+.Tela_Login {
+   margin: 0 auto;
+   display: grid;
+   /*Transformar em um grid, para melhor manipular os componentes*/
    justify-content: center;
-   display: flex;
-   background-color: rebeccapurple;
+   /*Atribuir componentes ao centro*/
+   background-color: antiquewhite;
+   /*Cor de fundo da tela*/
+   max-width: 1000px;
+   /*maximo de espaço para essa div*/
+   grid-template-columns: 200px;
+   /*Para atribuir tamanho das colunas em um grid*/
+   margin-top: 150px;
+   /*para descolar do grid*/
+   border-radius: 20px;
+   /*Arredondar as bordas*/
 }
 
-.Login {
-   width: 500px;
-   height: 500px;
-   align-items: center;
-   background-color: red;
-   padding: 40px;
-   margin-top: 200px;
+.Tela_Login>.Components>.Header_Tela_Login {
+   text-align: center;
+   /* Alinhar os caracteres no centro*/
+}
+
+.Tela_Login>.Components {
+   font-size: 20px;
+   /*Definir o tamanho dos caracteres*/
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.Tela_Login>.Components>.Main_Tela_Login>button {
+   background-color: rgba(43, 32, 32, 0.507);
+   font-size: auto;
+}
+
+.Tela_Login>.Components>.Main_Tela_Login>.Button_Login {
+   background-color: #7BD159;
+   border-radius: 10px;
 }
