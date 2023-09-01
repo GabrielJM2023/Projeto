@@ -12,8 +12,8 @@ function Tela_Login() {
                <label>Ta Perdido</label>
             </header >
             <main className='Main_Tela_Login'>
-               <input type={'text'} placeholder='Email'></input>
-               <input type={'password'} placeholder='Senha'></input>
+               <input className='Email' type={'text'} placeholder='Email'></input>
+               <input className='Senha' type={'password'} placeholder='Senha'></input>
                <Button className={'Button_Login'} label={'Entrar'}></Button>
                <Button className={'Button_Login'} label={'Cadastrar-se'}></Button>
                <a href='#'>Entrar sem fazer login</a>
