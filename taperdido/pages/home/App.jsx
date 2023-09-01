@@ -7,7 +7,7 @@ function Tela_Login() {
          <div className='Components'>
             <header className='Header_Tela_Login'>
                <div className='Image'>
-                  <img src='/icons/icon-192x192.png' alt='Teste' ></img>
+                  <img src='/icons/icon-128x128.png' alt='Teste' ></img>
                </div>
                <label>Ta Perdido</label>
             </header >

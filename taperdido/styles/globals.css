@@ -34,6 +34,8 @@ a {
 
 .Tela_Login>.Components>.Header_Tela_Login {
    text-align: center;
+   justify-content: center;
+   align-items: center;
    /* Alinhar os caracteres no centro*/
 }
 
@@ -44,12 +46,16 @@ a {
    margin-bottom: 20px;
 }
 
-.Tela_Login>.Components>.Main_Tela_Login>button {
-   background-color: rgba(43, 32, 32, 0.507);
-   font-size: auto;
-}
-
 .Tela_Login>.Components>.Main_Tela_Login>.Button_Login {
    background-color: #7BD159;
    border-radius: 10px;
+   height: 30px;
+   width: 100%;
+   display: flex;
+   /*inline*/
+   justify-content: center;
+   align-items: center;
+   margin: 10px 10px 10px 0px;
+   border: none;
+   cursor: pointer;
 }
