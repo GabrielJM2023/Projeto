@@ -20,8 +20,6 @@ a {
    /*Transformar em um grid, para melhor manipular os componentes*/
    justify-content: center;
    /*Atribuir componentes ao centro*/
-   background-color: antiquewhite;
-   /*Cor de fundo da tela*/
    max-width: 1000px;
    /*maximo de espaço para essa div*/
    grid-template-columns: 200px;
@@ -30,9 +28,12 @@ a {
    /*para descolar do grid*/
    border-radius: 20px;
    /*Arredondar as bordas*/
+   background-color: pink;
 }
 
 .Tela_Login>.Components>.Header_Tela_Login {
+   font-size: 30px;
+   /*Definir o tamanho dos caracteres*/
    text-align: center;
    justify-content: center;
    align-items: center;
@@ -40,10 +41,9 @@ a {
 }
 
 .Tela_Login>.Components {
-   font-size: 20px;
-   /*Definir o tamanho dos caracteres*/
    margin-top: 20px;
    margin-bottom: 20px;
+   background-color: pink;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Button_Login {
@@ -71,11 +71,31 @@ a {
    left: 0;
    width: 100%;
    height: 2px;
-   background: #ff4b1f;
+   background: #319e2d;
    transform: scaleX(0);
    transition: transform 0.3s ease;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Button_Login:hover::before {
    transform: scaleX(1);
+}
+
+.Tela_Login>.Components>.Main_Tela_Login>input {
+   border-radius: 5px;
+   border-color: #7BD159;
+   border: solid;
+   border-width: thin;
+   width: 100%;
+   height: 25px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.Tela_Login>.Components>.Main_Tela_Login>.Entrar_Sem_Acesso {
+   font-size: 15px;
+   /*Definir o tamanho dos caracteres*/
+   align-items: center;
+   text-align: center;
+   text-decoration: underline;
+   text-decoration-color: #319e2d;
 }

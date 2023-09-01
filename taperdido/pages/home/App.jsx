@@ -9,14 +9,16 @@ function Tela_Login() {
                <div className='Image'>
                   <img src='/icons/icon-128x128.png' alt='Teste' ></img>
                </div>
-               <label>Ta Perdido</label>
+               <label>Ta Perdido?</label>
             </header >
             <main className='Main_Tela_Login'>
-               <input className='Email' type={'text'} placeholder='Email'></input>
+               <input placeholder='Email' type="text" id="email" className='Teste2' required></input>
                <input className='Senha' type={'password'} placeholder='Senha'></input>
                <Button className={'Button_Login'} label={'Entrar'}></Button>
                <Button className={'Button_Login'} label={'Cadastrar-se'}></Button>
-               <a href='#'>Entrar sem fazer login</a>
+               <div className='Entrar_Sem_Acesso'>
+                  <a href='#'>Entrar sem fazer login</a>
+               </div>
             </main>
          </div>
       </div >
