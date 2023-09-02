@@ -28,7 +28,7 @@ a {
    /*para descolar do grid*/
    border-radius: 20px;
    /*Arredondar as bordas*/
-   background-color: pink;
+   background-color: #EDFFE6;
 }
 
 .Tela_Login>.Components>.Header_Tela_Login {
@@ -43,7 +43,6 @@ a {
 .Tela_Login>.Components {
    margin-top: 20px;
    margin-bottom: 20px;
-   background-color: pink;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Button_Login {
@@ -55,7 +54,7 @@ a {
    /*inline*/
    justify-content: center;
    align-items: center;
-   margin: 10px 10px 10px 0px;
+   margin-top: 10px;
    border: none;
    cursor: pointer;
    position: relative;
@@ -81,14 +80,12 @@ a {
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>input {
-   border-radius: 5px;
-   border-color: #7BD159;
-   border: solid;
-   border-width: thin;
-   width: 100%;
-   height: 25px;
-   margin-top: 5px;
-   margin-bottom: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #8492A6;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Entrar_Sem_Acesso {
@@ -98,4 +95,5 @@ a {
    text-align: center;
    text-decoration: underline;
    text-decoration-color: #319e2d;
+   margin-top: 15px;
 }
