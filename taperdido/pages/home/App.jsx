@@ -8,7 +8,7 @@ function Tela_Login() {
          <div className='Components'>
             <header className='Header_Tela_Login'>
                <Header></Header>
-            </header >
+            </header>
             <main className='Main_Tela_Login'>
                <input placeholder='Email' type="text" id="email" className='Teste2' required></input>
                <input className='Senha' type={'password'} placeholder='Senha'></input>

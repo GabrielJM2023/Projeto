@@ -1,16 +1,14 @@
 import React from 'react'
 import Button from '../../src/components/Button/Button'
+import Header from '../../src/commons/constans/Header'
 
 function Tela_Cadastro() {
    return (
       <div className='Tela_Login'>
          <div className='Components'>
             <header className='Header_Tela_Login'>
-               <div className='Image'>
-                  <img src='/icons/icon-128x128.png' alt='Teste' ></img>
-               </div>
-               <label>Ta Perdido?</label>
-            </header >
+               <Header></Header>
+            </header>
             <main className='Main_Tela_Login'>
                <input placeholder='Email' type="text" id="email" className='Teste2' required></input>
                <input className='Senha' type={'password'} placeholder='Senha'></input>
