@@ -61,6 +61,7 @@ a {
    display: inline-block;
    text-decoration: none;
    transition: color 0.3s ease;
+   cursor: pointer;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Button_Login::before {
@@ -80,12 +81,12 @@ a {
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>input {
-  background-color: #FFFFFF;
-  border: 1px solid #8492A6;
-  border-radius: 5px;
-  width: 100%;
-  height: 35px;
-  margin-top: 10px;
+   background-color: #FFFFFF;
+   border: 1px solid #8492A6;
+   border-radius: 5px;
+   width: 100%;
+   height: 35px;
+   margin-top: 10px;
 }
 
 .Tela_Login>.Components>.Main_Tela_Login>.Entrar_Sem_Acesso {
