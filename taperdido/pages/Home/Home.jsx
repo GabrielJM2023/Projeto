@@ -12,7 +12,7 @@ function Tela_Cadastro() {
             </header>
             <main className='Main_Tela_Login'>
                <div className='Entrar_Sem_Acesso'>
-                  <Link href='/'>Voltar</Link>
+                  <Link href='../Login/Cadastro'>Voltar</Link>
                </div>
             </main>
          </div>

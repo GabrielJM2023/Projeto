@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../src/components/Button/Button'
 import Header from '../../src/commons/constans/Header'
+import Link from 'next/link';
 
 function Tela_Cadastro() {
    return (
@@ -15,7 +16,7 @@ function Tela_Cadastro() {
                <Button className={'Button_Login'} label={'Entrar'}></Button>
                <Button className={'Button_Login'} label={'Cadastrar-se'}></Button>
                <div className='Entrar_Sem_Acesso'>
-                  <a href='#'>Entrar sem fazer login</a>
+                  <Link href='/'>Voltar</Link>
                </div>
             </main>
          </div>
