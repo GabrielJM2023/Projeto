@@ -1,13 +1,14 @@
 import React from 'react'
 import Button from '../../src/components/Button/Button'
 import Header from '../../src/commons/constans/Header'
+import Autenticacao from '../../src/components/Autenticacao/Autenticacao'
 import Link from 'next/link';
 
 function Tela_Login() {
    return (
       <div className='Tela_Login'>
          <div className='Components'>
-            <header className='Header_Tela_Login'>
+            <header className='Header_Telas_Login'>
                <Header></Header>
             </header>
             <main className='Main_Tela_Login'>
@@ -15,6 +16,7 @@ function Tela_Login() {
                <input className='Senha' type={'password'} placeholder='Senha'></input>
                <Button className={'Button_Login'} label={'Entrar'}></Button>
                <Button className={'Button_Login'} label={'Cadastrar-se'}></Button>
+               <Autenticacao></Autenticacao>
                <div className='Entrar_Sem_Acesso'>
                   <Link href='../Home/Home'>Entrar sem fazer login</Link>
                </div>
