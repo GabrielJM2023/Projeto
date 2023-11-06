@@ -24,7 +24,7 @@
       "**/*.ts",
       "**/*.tsx",
       "src/components/Button/Button.jsx"
-, "src/commons/constans/Header.jsx"   ],
+, "src/commons/constans/Header.jsx", "pages/api/middleware.js"   ],
    "exclude": [
       "node_modules"
    ]
