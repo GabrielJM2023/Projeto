@@ -1,3 +1,4 @@
+"use cliente"
 
 import { useState } from "react";
 import "./estilo.css";
@@ -14,15 +15,15 @@ const Home = async () => {
 }
 
 const Search = async () => {
-    window.location.href = '/search';
+    window.location.href = '/home/Search';
 }
 
 const Form = async () => {
-    window.location.href = '/Form';
+    window.location.href = '/home/Form';
 }
 
 const Perfil = async () => {
-    window.location.href = '/Perfil';
+    window.location.href = '/home/Perfil';
 }
 
 export default function NavBar() {

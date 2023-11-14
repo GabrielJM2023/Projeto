@@ -1,0 +1,21 @@
+.Principal {
+    background-color: red;
+    margin-left: 7%;
+    margin-top: 2%;
+    border-radius: 7px;
+    padding-left: 1%;
+
+    background-color: #EDFFE6;
+}
+
+.Principal>h1 {
+    padding-top: 1%;
+    background-color: red;
+}
+
+.Principal>.Cadastro {}
+
+.Principal>.Cadastro>.Nome {
+    background-color: purple;
+
+}
