@@ -9,12 +9,19 @@ export default function Perfil() {
         <>
             <main className='Principal'>
                 <h1>Conta</h1>
-                <div>
-                    <label>Nome</label>
-                    <input></input>
-                    <label>E-mail</label>
-                    <input></input>
-                    <label>Senha</label>
+                <div className='Cadastro'>
+                    <div className='Nome'>
+                        <label>Nome</label>
+                        <input></input>
+                    </div>
+                    <div className='Email'>
+                        <label>E-mail</label>
+                        <input></input>
+                    </div>
+                    <div className='Senha'>
+                        <label>Senha</label>
+                        <input></input>
+                    </div>
                 </div>
                 <div>
                     <label>Categorias Favoritas</label>
