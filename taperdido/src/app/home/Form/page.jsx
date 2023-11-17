@@ -1,11 +1,14 @@
-"use client"
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
+import { cookies } from 'next/headers'
+import Form from './Form'
 
-import React from 'React';
+export default async function PagePerfil() {
+    const cookieStore = cookies()
+    const supabase = createServerComponentClient({ cookies: () => cookieStore })
 
-export default function Form() {
-    return (
-        <>
+    const {
+        data: { session },
+    } = await supabase.auth.getSession()
 
-        </>
-    );
+    return <Form session={session} />
 }
