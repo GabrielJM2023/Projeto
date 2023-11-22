@@ -19,6 +19,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+
       </head>
 
       <body className={inter.className}>{children}</body>

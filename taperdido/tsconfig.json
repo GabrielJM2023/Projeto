@@ -35,7 +35,9 @@
     ".next/types/**/*.ts",
     "src/components/NavBar/index.jsx",
     "src/app/home/Search/Index.jsx",
-    "next.config.js"
+    "next.config.js",
+    "src/app/login/login.jsx",
+    "src/app/login/login.jsx",
   ],
   "exclude": [
     "node_modules"
