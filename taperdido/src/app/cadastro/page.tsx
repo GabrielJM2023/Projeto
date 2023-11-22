@@ -3,15 +3,15 @@ import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
 import { RedirectType } from 'next/navigation'
 import { redirect } from 'next/navigation'
-import Perfil from './login'
+import Cadastro from './cadastro'
 
 export default async function PagePerfil() {
-  const supabase = createServerComponentClient({ cookies })
-  const {
-    data: { session },
-  } = await supabase.auth.getSession()
+    const supabase = createServerComponentClient({ cookies })
+    const {
+        data: { session },
+    } = await supabase.auth.getSession()
 
 
-  return <Perfil />
+    return <Cadastro />
 
 }
