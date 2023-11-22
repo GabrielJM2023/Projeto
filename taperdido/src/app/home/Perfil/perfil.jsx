@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'React';
+import React from 'react';
 import './estilo.css';
 import { RiEdit2Fill } from "react-icons/ri";
 
