@@ -11,7 +11,6 @@ export default async function PagePerfil() {
     data: { session },
   } = await supabase.auth.getSession()
 
-
   return <Perfil />
 
 }

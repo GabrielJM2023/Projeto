@@ -36,32 +36,36 @@ function Copyright(props: any) {
 const defaultTheme = createTheme();
 
 export default function Cadastro() {
+    const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
-    const [error, setError] = useState('');
 
-    const Register = async () => {
-        window.location.href = '/cadastro';
-    }
-
-    const handleLogin = async () => {
+    const RegisterUser = async () => {
         try {
-            const { error } = await supabase.auth.signInWithPassword({
+            const { user } = await supabase.auth.signUp({
                 email: email,
                 password: senha,
             });
 
-            if (error) {
-                setError(error.message);
-            } else {
-                // Redirecione o usuário para a página após o login bem-sucedido
-                window.location.href = '/home';
+            const { error } = await supabase.from('USUARIO').insert([{
+                NOME: nome,
+                EMAIL: email,
+                SENHA: senha,
+                ID_USUARIO: user?.id,
+            }]).select()
+
+            if (error) throw error
+            alert('Registro Cadastrado')
+
+            const Register = async () => {
+                window.location.href = '/login';
             }
 
         } catch (error) {
-            console.error('Erro ao fazer login:', error);
+            alert('Erro ao inserir o usuário')
+        } finally {
         }
-    };
+    }
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -103,6 +107,17 @@ export default function Cadastro() {
                                     margin="normal"
                                     required
                                     fullWidth
+                                    id="nome"
+                                    label="Nome Completo"
+                                    name="nome"
+                                    value={nome}
+                                    onChange={(e) => setNome(e.target.value)}
+                                    autoFocus
+                                />
+                                <TextField
+                                    margin="normal"
+                                    required
+                                    fullWidth
                                     id="email"
                                     label="Email"
                                     name="email"
@@ -132,30 +147,15 @@ export default function Cadastro() {
                                     fullWidth
                                     variant="contained"
                                     color="success"
-                                    onClick={handleLogin}
-                                    sx={{ mt: 3, mb: 2 }}
-                                >
-                                    Logar
-                                </Button>
-                                <Button
-                                    type="submit"
-                                    fullWidth
-                                    variant="contained"
-                                    color="success"
-                                    onClick={Register}
+                                    onClick={RegisterUser}
                                     sx={{ mt: 3, mb: 2 }}
                                 >
                                     Cadastrar
                                 </Button>
                                 <Grid container>
-                                    <Grid item xs>
-                                        <Link href="#" variant="body2">
-                                            Esqueceu sua senha?
-                                        </Link>
-                                    </Grid>
-                                    <Grid item>
-                                        <Link href="#" variant="body2">
-                                            Entrar fazer login?
+                                    <Grid item >
+                                        <Link href="/login" variant="body2">
+                                            Já tem uma conta?Login
                                         </Link>
                                     </Grid>
                                 </Grid>
