@@ -56,10 +56,7 @@ export default function Cadastro() {
 
             if (error) throw error
             alert('Registro Cadastrado')
-
-            const Register = async () => {
-                window.location.href = '/login';
-            }
+            window.location.href = '/home';
 
         } catch (error) {
             alert('Erro ao inserir o usuário')
