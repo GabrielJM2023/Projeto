@@ -29,6 +29,15 @@ export default function Home() {
             <CssBaseline />
             <main>
                 <Container sx={{ py: 12 }} maxWidth="xl">
+                    <Box sx={{ color: 'tertiary.main' }}>
+                        <Typography component="h3" variant="h4">
+                            Estavelecimentos melhores avaliados
+                        </Typography>
+                        <Typography component="h3" variant="h6">
+                            Os melhores para encontrar
+                        </Typography>
+                        <hr></hr>
+                    </Box>
                     <Grid container spacing={4}>
                         {cards.map((card) => (
                             <Grid item key={card} xs={12} sm={6} md={4} lg={3}>
