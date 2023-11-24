@@ -1,8 +1,6 @@
 
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import { cookies } from 'next/headers'
-import { RedirectType } from 'next/navigation'
-import { redirect } from 'next/navigation'
 import Cadastro from './cadastro'
 
 export default async function PagePerfil() {
