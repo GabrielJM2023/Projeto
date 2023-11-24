@@ -16,6 +16,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../../components/Header/index'
 import { useState } from 'react';
 import { createClientComponentClient } from '../../../node_modules/@supabase/auth-helpers-nextjs/dist/index';
+import theme from '../../../styles/theme'
 
 const supabase = createClientComponentClient();
 
@@ -33,7 +34,7 @@ function Copyright(props: any) {
 }
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+const defaultTheme = theme;
 
 export default function Cadastro() {
     const [nome, setNome] = useState('');
@@ -83,7 +84,7 @@ export default function Cadastro() {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        bgcolor: '#EDFFE6',
+                        bgcolor: '#FFF',
                     }}>
                     <Container component="main" maxWidth="xs">
                         <CssBaseline />

@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../../components/Header/index'
 import { useState } from 'react';
 import { createClientComponentClient } from '../../../node_modules/@supabase/auth-helpers-nextjs/dist/index';
+import theme from '../../../styles/theme'
 
 const supabase = createClientComponentClient();
 
@@ -32,7 +33,7 @@ function Copyright(props: any) {
 }
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = createTheme();
+const defaultTheme = theme;
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -81,7 +82,7 @@ export default function Login() {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        bgcolor: '#EDFFE6',
+                        bgcolor: '#FFF',
                     }}>
                     <Container component="main" maxWidth="xs">
                         <CssBaseline />
@@ -119,6 +120,7 @@ export default function Login() {
                                     name="password"
                                     label="Senha"
                                     type="password"
+                                    className={'primary.main'}
                                     id="password"
                                     autoComplete="current-password"
                                 />
@@ -153,7 +155,7 @@ export default function Login() {
                                         </Link>
                                     </Grid>
                                     <Grid item>
-                                        <Link href="#" variant="body2">
+                                        <Link href="/home" variant="body2">
                                             Entrar fazer login?
                                         </Link>
                                     </Grid>

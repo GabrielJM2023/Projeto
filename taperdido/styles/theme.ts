@@ -8,6 +8,16 @@ const theme = createTheme({
         secondary: {
             main: '#EDFFE6',
         },
+        tertiary: {
+            main: '#51815C',
+        },
+        quaternary: {
+            main: '#A6DB94',
+        },
+        quinary: {
+            main: '#92D47C',
+        }
+
     },
 });
 

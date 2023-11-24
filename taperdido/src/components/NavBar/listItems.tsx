@@ -42,23 +42,23 @@ export const mainListItems = (
             </ListItemIcon>
             <ListItemText primary="Página Inicial" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton onClick={Search}>
             <ListItemIcon>
                 <AiOutlineSearch className='Icone' size={SizeIcon} color={ColorIcon} />
             </ListItemIcon>
-            <ListItemText primary="Orders" />
+            <ListItemText primary="Pesquisa" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton onClick={Form}>
             <ListItemIcon>
                 <RxFileText className='Icone' size={SizeIcon} color={ColorIcon} />
             </ListItemIcon>
-            <ListItemText primary="Customers" />
+            <ListItemText primary="Formulario" />
         </ListItemButton>
-        <ListItemButton>
+        <ListItemButton onClick={Perfil}>
             <ListItemIcon>
                 <CgProfile className='Icone' size={SizeIcon} color={ColorIcon} />
             </ListItemIcon>
-            <ListItemText primary="Reports" />
+            <ListItemText primary="Perfil" />
         </ListItemButton>
     </React.Fragment >
 );

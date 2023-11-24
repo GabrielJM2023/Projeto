@@ -13,7 +13,12 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { mainListItems, secondaryListItems } from './listItems';
-import thema from '../../../styles/thema'
+import theme from '../../../styles/theme'
+
+interface NavBarProps {
+    children: ReactNode
+}
+
 
 const drawerWidth: number = 250;
 
@@ -66,9 +71,9 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 );
 
 // TODO remove, this demo shouldn't need to reset the theme.
-const defaultTheme = thema
+const defaultTheme = theme
 
-export default function Dashboard() {
+export default function Dashboard({ children }: NavBarProps) {
     const [open, setOpen] = React.useState(true);
     const toggleDrawer = () => {
         setOpen(!open);
@@ -78,11 +83,10 @@ export default function Dashboard() {
         <ThemeProvider theme={defaultTheme}>
             <main>
                 <Box sx={{ display: 'flex' }}>
-                    <CssBaseline />
                     <AppBar position="fixed" open={open} color="primary">
                         <Toolbar
                             sx={{
-                                pr: '21231231234px',
+                                pr: '22px',
                             }}
                         >
                             <IconButton
@@ -91,7 +95,7 @@ export default function Dashboard() {
                                 aria-label="open drawer"
                                 onClick={toggleDrawer}
                                 sx={{
-                                    marginRight: '36px',
+                                    marginRight: 'px',
                                     ...(open && { display: 'none' }),
                                 }}
                             >
@@ -108,11 +112,14 @@ export default function Dashboard() {
                             </Typography>
                         </Toolbar>
                     </AppBar>
-                    <Drawer variant="permanent" open={open}>
+
+
+                    <Drawer variant="permanent" open={open} sx={{ bgcolor: 'secondary.main' }}>
                         <Toolbar
                             sx={{
                                 display: 'flex',
                                 alignItems: 'center',
+                                bgcolor: 'primary.main',
                                 justifyContent: 'flex-end',
                                 px: [1],
                             }}
@@ -121,10 +128,9 @@ export default function Dashboard() {
                                 <ChevronLeftIcon />
                             </IconButton>
                         </Toolbar>
-                        <Divider />
-                        <List component="nav">
+                        <List component="nav" bgcolor='primary' sx={{ bgcolor: 'primary.main' }}>
                             {mainListItems}
-                            <Divider sx={{ my: 1 }} />
+                            < Divider sx={{ my: 1 }} />
                         </List>
                     </Drawer>
                     <Box
@@ -136,6 +142,7 @@ export default function Dashboard() {
                             overflow: 'auto',
                         }}
                     >
+                        {children}
                     </Box>
                 </Box>
             </main>
