@@ -48,15 +48,6 @@ export default function Cadastro() {
                 password: senha,
             });
 
-            const { error } = await supabase.from('USUARIO').insert([{
-                NOME: nome,
-                EMAIL: email,
-                SENHA: senha,
-                ID_USUARIO: user?.id,
-            }]).select()
-
-            if (error) throw error
-            alert('Registro Cadastrado')
             window.location.href = '/home';
 
         } catch (error) {

@@ -23,15 +23,15 @@ const Home = async () => {
 }
 
 const Search = async () => {
-    window.location.href = '/home/Search';
+    window.location.href = '/home';
 }
 
 const Form = async () => {
-    window.location.href = '/home/Form';
+    window.location.href = '/home';
 }
 
 const Perfil = async () => {
-    window.location.href = '/home/Perfil';
+    window.location.href = '/home';
 }
 
 export const mainListItems = (

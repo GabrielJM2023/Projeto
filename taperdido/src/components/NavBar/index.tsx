@@ -116,6 +116,7 @@ export default function Dashboard({ children }: NavBarProps) {
 
                     <Drawer variant="permanent" open={open} sx={{ bgcolor: 'secondary.main' }}>
                         <Toolbar
+                            onClick={toggleDrawer}
                             sx={{
                                 display: 'flex',
                                 alignItems: 'center',

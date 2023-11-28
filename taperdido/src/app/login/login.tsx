@@ -54,7 +54,6 @@ export default function Login() {
             if (error) {
                 setError(error.message);
             } else {
-                // Redirecione o usuário para a página após o login bem-sucedido
                 window.location.href = '/home';
             }
 

@@ -4,11 +4,6 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'Ta Perdido',
-  description: 'Projeto Integrador',
-}
-
 export default function RootLayout({
   children,
 }: {
@@ -17,8 +12,10 @@ export default function RootLayout({
   return (
     <html lang="PT-BR">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+
         <link rel="manifest" href="/manifest.json" />
+        <title>Ta Perdido</title>
+        <link rel='icon' href='/static/favicon.ico' />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
