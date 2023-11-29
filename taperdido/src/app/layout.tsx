@@ -1,7 +1,9 @@
-import type { Metadata } from 'next'
+import dotenv from 'dotenv';
+
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+dotenv.config();
 const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({

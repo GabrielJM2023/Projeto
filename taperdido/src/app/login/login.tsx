@@ -14,10 +14,11 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Header from '../../components/Header/index'
 import { useState } from 'react';
-import { createClientComponentClient } from '../../../node_modules/@supabase/auth-helpers-nextjs/dist/index';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '/types/constants'
+import { createClient } from '@supabase/supabase-js'
 import theme from '../../../styles/theme'
 
-const supabase = createClientComponentClient();
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 function Copyright(props: any) {
     return (

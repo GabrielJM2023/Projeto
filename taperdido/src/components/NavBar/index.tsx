@@ -112,9 +112,7 @@ export default function Dashboard({ children }: NavBarProps) {
                             </Typography>
                         </Toolbar>
                     </AppBar>
-
-
-                    <Drawer variant="permanent" open={open} sx={{ bgcolor: 'secondary.main' }}>
+                    <Drawer variant="permanent" open={open} sx={{ bgcolor: 'primary.main' }}>
                         <Toolbar
                             onClick={toggleDrawer}
                             sx={{
@@ -129,9 +127,8 @@ export default function Dashboard({ children }: NavBarProps) {
                                 <ChevronLeftIcon />
                             </IconButton>
                         </Toolbar>
-                        <List component="nav" bgcolor='primary' sx={{ bgcolor: 'primary.main' }}>
+                        <List component="nav" bgcolor='primary' sx={{ bgcolor: 'primary.main', height: '100%' }}>
                             {mainListItems}
-                            < Divider sx={{ my: 1 }} />
                         </List>
                     </Drawer>
                     <Box
