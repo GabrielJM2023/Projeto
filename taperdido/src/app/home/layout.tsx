@@ -1,7 +1,7 @@
 "use client"
 
 import { ReactNode } from 'react'
-import NavBar from '@/components/NavBar/index'
+import NavBar from '../../components/NavBar/index'
 
 interface NavBarProps {
     children: ReactNode
@@ -9,9 +9,10 @@ interface NavBarProps {
 
 export default function NavBarMenu({ children }: NavBarProps) {
     return (
-        <div>
-            <NavBar></NavBar>
-            {children}
-        </div>
+        <>
+            <div>
+                <NavBar children={children} />
+            </div>
+        </>
     )
 }
