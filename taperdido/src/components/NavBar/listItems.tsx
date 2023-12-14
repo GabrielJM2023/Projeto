@@ -24,7 +24,7 @@ const Form = async () => {
 }
 
 const Perfil = async () => {
-    window.location.href = '/home';
+    window.location.href = '/home/Perfil';
 }
 
 export const mainListItems = (

@@ -16,8 +16,10 @@ const theme = createTheme({
         },
         quinary: {
             main: '#92D47C',
+        },
+        sixth: {
+            main: '#A0DB44',
         }
-
     },
 });
 

@@ -10,12 +10,17 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import theme from '../../../styles/theme'
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '/types/constants'
+import { createClient } from '@supabase/supabase-js'
+import { redirect } from 'next/navigation';
+
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const defaultTheme = theme;
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const cards = [1];
 
 const Teste = (
     console.log('Teste')
@@ -39,7 +44,7 @@ export default function Home() {
                     <Grid container spacing={4} >
                         {cards.map((card) => (
                             <Grid item key={card} xs={12} sm={6} md={4} lg={3} onClick={Teste}>
-                                <CardActionArea component="a" href="#">
+                                <CardActionArea component="a" href="/home/Evento">
                                     <Card
                                         sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                                     >
@@ -50,13 +55,12 @@ export default function Home() {
                                             }}
                                             image="https://source.unsplash.com/random?wallpapers"
                                         />
-                                        <CardContent sx={{ flexGrow: 1 }}>
+                                        <CardContent sx={{ flexGrow: 1 }} >
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                Heading
+                                                Bora Comer
                                             </Typography>
                                             <Typography>
-                                                This is a media card. You can use this section to describe the
-                                                content.
+                                                Desfrute de uma explosão de sabores em cada fatia em nossa pizzaria. Uma experiência irresistível para os amantes da boa pizza.
                                             </Typography>
                                         </CardContent>
                                     </Card>
