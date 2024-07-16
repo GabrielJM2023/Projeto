@@ -101,7 +101,7 @@ export default function Login() {
                             <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
                                 <TextField
                                     margin="normal"
-                                    required
+                                     required
                                     fullWidth
                                     id="email"
                                     label="Email"
