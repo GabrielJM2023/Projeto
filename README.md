@@ -1,0 +1,1 @@
+O projeto tem como objetivo ajudar pessoas que queiram descobrir novos lugares em Rondonópolis ou conhecer a cidade pela primeira vez, de modo a desenvolver um software que faça a divulgação de eventos e atrações turísticas na cidade de Rondonópolis - MT
